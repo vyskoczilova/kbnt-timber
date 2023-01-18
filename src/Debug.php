@@ -1,6 +1,6 @@
 <?php
 
-namespace KBNT\Timber;
+namespace KBNT\TimberHelper;
 
 use Timber\Twig_Function;
 use Twig\Environment;
