@@ -1,0 +1,17 @@
+{
+    "name": "kbnt/timber",
+    "description": "Timber related snippets and code.",
+    "type": "library",
+    "license": "GPL-2.0 or later",
+    "autoload": {
+        "psr-4": {
+            "KBNT\\Timber\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Karolína Vyskočilová",
+            "email": "karolina@kybernaut.cz"
+        }
+    ]
+}
