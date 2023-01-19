@@ -5,7 +5,7 @@ namespace KBNT\Timber;
 use Timber\Twig_Function;
 use Twig\Environment;
 
-class AcfBlocksSupport
+class AcfBlocks
 {
 
 	/**
