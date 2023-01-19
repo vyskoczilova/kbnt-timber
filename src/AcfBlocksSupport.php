@@ -1,6 +1,6 @@
 <?php
 
-namespace KBNT\TimberHelper;
+namespace KBNT\Timber;
 
 use Timber\Twig_Function;
 use Twig\Environment;
@@ -13,7 +13,11 @@ class AcfBlocksSupport
 	 */
 	public function __construct()
 	{
-		add_filter('timber/twig', [$this, 'add_to_twig']);
+		add_action('plugins_loaded', function(){
+//			add_action('plugins_loaded', function() {
+				add_filter('timber/twig', [$this, 'add_to_twig']);
+//			});
+		});
 	}
 
 	/**

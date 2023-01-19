@@ -1,6 +1,6 @@
 <?php
 
-namespace KBNT\TimberHelper;
+namespace KBNT\Timber;
 
 use Timber\Twig_Function;
 use Twig\Environment;
@@ -14,7 +14,9 @@ class Debug
 	public function __construct()
 	{
 		if (defined('WP_DEBUG') && WP_DEBUG ) {
-		add_filter('timber/twig', [$this, 'add_to_twig']);
+//			add_action('plugins_loaded', function(){
+				\add_filter('timber/twig', [$this, 'add_to_twig'], 10, 1);
+//			});
 		}
 	}
 

@@ -1,17 +1,25 @@
 {
-    "name": "kbnt/timber",
-    "description": "Timber related snippets and code.",
-    "type": "library",
-    "license": "GPL-2.0 or later",
-    "autoload": {
-        "psr-4": {
-            "KBNT\\TimberHelper\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Karolína Vyskočilová",
-            "email": "karolina@kybernaut.cz"
-        }
-    ]
+  "name": "kbnt/timber",
+  "type": "library",
+  "description": "Timber related snippets",
+  "keywords": [
+	"wordpress",
+	"timber",
+	"snippets"
+  ],
+  "homepage": "https://kybernaut.cz",
+  "license": "MIT",
+  "authors": [
+	{
+	  "name": "Karolína Vyskočilová",
+	  "email": "karolina@kybernaut.cz",
+	  "homepage": "https://kybernaut.cz",
+	  "role": "Developer"
+	}
+  ],
+  "autoload": {
+	"classmap": [
+	  "src/"
+	]
+  }
 }
