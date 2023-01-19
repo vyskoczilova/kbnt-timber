@@ -14,9 +14,9 @@ class Debug
 	public function __construct()
 	{
 		if (defined('WP_DEBUG') && WP_DEBUG ) {
-//			add_action('plugins_loaded', function(){
+			add_action('plugins_loaded', function(){
 				\add_filter('timber/twig', [$this, 'add_to_twig'], 10, 1);
-//			});
+			});
 		}
 	}
 

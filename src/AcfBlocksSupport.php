@@ -14,9 +14,7 @@ class AcfBlocksSupport
 	public function __construct()
 	{
 		add_action('plugins_loaded', function(){
-//			add_action('plugins_loaded', function() {
 				add_filter('timber/twig', [$this, 'add_to_twig']);
-//			});
 		});
 	}
 
