@@ -21,5 +21,8 @@
 	"classmap": [
 	  "src/"
 	]
+  },
+  "require": {
+	"timber/timber": "^1.0"
   }
 }
